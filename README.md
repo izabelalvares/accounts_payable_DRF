@@ -1,2 +1,2 @@
 # accounts_payable_DRF
-a simple DRF API for accessing invoices 
+a simple django rest framework API for accessing invoices 
