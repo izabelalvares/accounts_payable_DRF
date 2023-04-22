@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{invoice.invoice_number}}</title>
+
+      <style>
+        
+        body {
+        
+        margin: 0;
+        background-color: #002448;
+        padding: 1vw;
+      }
+
+        
+        .column1 {display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          
+        }
+
+        h1 {color:whitesmoke}
+        p {color: whitesmoke}
+        li {color: whitesmoke}
+        * {font-family: "Avenir Next", Arial, Helvetica, sans-serif;
+      }
+
+        a{color: lightblue;}
+
+      </style>
+
+  
+  </head>
+  <body>
+    <a href="/">Home</a>
+
+  
+    <div class="column1">
+    
+      <p> Invoice ID:  {{ invoice.id }}</p>
+       <p> Company: {{invoice.company}}</p>
+       <p>Amount (GBP): {{invoice.amount}}</p>
+       <p>Due Date: {{invoice.due_date}}</p>
+       <p>Paid?: {{invoice.paid }}</p>
+
+    
+    </div>
+
+
+
+  </body>
+</html>
